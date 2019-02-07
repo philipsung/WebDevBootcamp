@@ -20,6 +20,7 @@ var commentRoutes    = require("./routes/comments"),
 
 
 //Set app properties
+console.log(process.env.DATABASEURL);
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended:true}));
